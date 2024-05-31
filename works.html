@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Index</title>
+    <style>
+       
+    </style>
+    
+</head>
+<body>
+    <div class="body">
+        <!-- navigation bar -->
+        <div class="nav-bar">
+            <div class="black-bar">
+                <span>FAMILY EVENTS</span>
+                <input type="checkbox" class="hm-check" id="hm-menu">
+                <label onclick="hmaction();" class="hm-label" for="hm-menu">
+                    <div class="menu-icon">
+                        <div class="line"></div>
+                        <div class="line middle-line"></div>
+                        <div class="line"></div>
+                    </div>
+                
+                </label>
+            </div>
+            <div class="glass-bar">
+                <ul>
+                    <li>Services</li>
+                    <li>Login/Register</li>                   <!--NAVIGATION-->
+                    <li>Works</li>
+                    <li class="credits">©familyevents</li>
+                </ul>
+            </div>
+        </div>
+<!-- navigation bar -->
+<!-- content -->
+
+<div class="service-content-box">
+    
+    <form class="create-service works-bar works">
+       <h3>WEDDING EVENTS</h3>
+       <span>PLACE : TIRUR</span>
+       <span>TYPE : WEDDING EVENTS</span>
+       <span>AVAILABLE SLOTS : 50</span>
+       <span>DOB : 04/06/2005</span>
+       <span>FROM : 9AM</span>
+       <span>TO : 4PM</span>
+       <span class="work-alert">*NO SLOTS AVAILABLE</span>
+       <button>BOOK SLOT</button>
+       <button class="work-admin-button">WORK SETTINGS</button>
+    </form>
+    
+
+
+</div>
+
+</body>
+<script>
+    var b = document.getElementsByClassName('service-card');
+var c = document.querySelectorAll('.service-card').length;
+if(window.innerWidth <= 425){
+    b[0].style.marginTop='15vh';
+    b[c-1].style.marginBottom='25vh';
+} else {
+    b[0].style.marginTop='33vh';
+    b[c-1].style.marginBottom='35vh';
+}
+</script>
+</html>

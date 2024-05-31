@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div class="body">
+        <!-- navigation bar -->
+        <div class="nav-bar">
+            <div class="black-bar">
+                <span>FAMILY EVENTS</span>
+                <input type="checkbox" class="hm-check" id="hm-menu">
+                <label onclick="hmaction();" class="hm-label" for="hm-menu">
+                    <div class="menu-icon">
+                        <div class="line"></div>
+                        <div class="line middle-line"></div>
+                        <div class="line"></div>
+                    </div>
+                
+                </label>
+            </div>
+            <div class="glass-bar">
+                <ul>
+                    <li>Services</li>
+                    <li>Login/Register</li>
+                    <li>Works</li>
+                    <li class="credits">©familyevents</li>
+                </ul>
+            </div>
+        </div>
+<!-- navigation bar -->
+<!-- content -->
+
+<div class="content">
+   <div class="brown-box-one">
+    <div class="one">
+<h1>FAMILY</h1>
+<h1>EVENTS</h1>
+<span class="login-alert">HAVE AN ACCOUNT?LOGIN</span>
+    </div>
+    <form class="two">
+<h1>REGISTER</h1>
+<input type="text" placeholder="Full Name" required>
+<input type="text" placeholder="Username" required>
+<input type="date" placeholder="Date of Birth" required>
+<input type="email" placeholder="Email" required>
+<input type="number" placeholder="Phone Number" required>
+<label class="profile-image-input" for="profile-image">Select File</label>
+<input id="profile-image" style="display: none;"  type="file">
+<input type="password" placeholder="Password" required>
+<div class="buttons">
+    <button type="reset">CLEAR</button>
+    <button type="submit">REGISTER</button>
+</div>
+</form>
+   </div>
+</div>
+
+</body>
+</html>

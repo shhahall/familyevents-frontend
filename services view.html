@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Index</title>
+    <style>
+       
+    </style>
+    
+</head>
+<body>
+    <div class="body">
+        <!-- navigation bar -->
+        <div class="nav-bar">
+            <div class="black-bar">
+                <span>FAMILY EVENTS</span>
+                <input type="checkbox" class="hm-check" id="hm-menu">
+                <label onclick="hmaction();" class="hm-label" for="hm-menu">
+                    <div class="menu-icon">
+                        <div class="line"></div>
+                        <div class="line middle-line"></div>
+                        <div class="line"></div>
+                    </div>
+                
+                </label>
+            </div>
+            <div class="glass-bar">
+                <ul>
+                    <li>Services</li>
+                    <li>Login/Register</li>                   <!--NAVIGATION-->
+                    <li>Works</li>
+                    <li class="credits">©familyevents</li>
+                </ul>
+            </div>
+        </div>
+<!-- navigation bar -->
+<!-- content -->
+
+<div class="service-content-box">
+    
+    <div class="service-card">
+       
+    </div>
+
+    <div class="service-card">
+        <div class="service-image" style="background-image: url(images/wedding-image.jpg); background-size: cover;"></div>
+        <div class="black-card">
+            <h2>WEDDING EVENT</h2>
+            <img src="images/wedding-image.jpg" class="service-image-tag" alt="" srcset=""><!--image here-->
+         <!--para here-->   <p>At Everlasting Memories Events, we bring your family celebrations to life with exceptional care and creativity. From milestone anniversaries and birthday parties to family reunions and baby showers, our dedicated team ensures every detail is flawlessly executed. We tailor each event to your unique vision, creating an atmosphere filled with joy and cherished moments. Let us turn your family gatherings into unforgettable experiences that will be remembered for years to come.</p>
+            <a href="">Book Now</a><!--link here-->
+            <div class="admins-buttons">
+                <a href="">Edit</a><!--link here-->
+                <a href="">Delete</a><!--link here--> 
+            </div>
+        </div>
+    </div>
+    
+
+
+</div>
+
+</body>
+<script>
+    var b = document.getElementsByClassName('service-card');
+var c = document.querySelectorAll('.service-card').length;
+if(window.innerWidth===425){
+    b[0].style.marginTop='25vh';
+    b[c-1].style.marginBottom='25vh';
+} else {
+    b[0].style.marginTop='35vh';
+    b[c-1].style.marginBottom='35vh';
+}
+</script>
+</html>
